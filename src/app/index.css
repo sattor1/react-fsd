@@ -2,35 +2,106 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+}
+
+@layer utilities {
+  /*-----------------------------------------Desktop----------------------------------------*/
+  @media screen and (min-width: 768px) {
+    .wide {
+      max-width: 1280px;
+      width: 100%;
+      margin-inline: auto;
+      padding-inline: 2rem;
+    }
+  }
+  /*-----------------------------------------Tablet----------------------------------------*/
+  @media screen and (max-width: 767px) {
+    .wide {
+      padding-inline: 1.5rem;
+    }
+  }
+  /*-----------------------------------------Mobil----------------------------------------*/
+  @media screen and (max-width: 574px) {
+    .wide {
+      padding-inline: 1rem;
+    }
+  }
+}
+
+@layer components {
+  .outline-text {
+    position: relative;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+  }
+}
+
 @layer base {
-    /*-----------------------------------------Rubik----------------------------------------*/
-    @font-face {
-        font-family: 'Rubik';
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url('./assets/fonts/Rubik/Rubik-Light.ttf') format('ttf');
-    }
-    @font-face {
-        font-family: 'RubikBold';
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url('./assets/fonts/Rubik/Rubik-Bold.ttf') format('ttf');
-    }
-    @font-face {
-        font-family: 'RubikMedium';
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url('./assets/fonts/Rubik/Rubik-Medium.ttf') format('ttf');
-    }
-    /*-----------------------------------------Roboto----------------------------------------*/
-    @font-face {
-        font-family: 'RobotoBold';
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url('./assets/fonts/Roboto/Roboto-Bold.ttf') format('ttf');
-    }
+  /*---------------------------------------LondrinaOutline------------------------------*/
+  @font-face {
+    font-family: 'LondrinaOutline';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./assets/fonts/LondrinaOutline/LondrinaOutline-Regular.ttf') format('ttf');
+  }
+  /*-----------------------------------------Sora----------------------------------------*/
+  @font-face {
+    font-family: 'SoraThin';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url('./assets/fonts/Sora/Sora-Thin.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'SoraExtraLight';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url('./assets/fonts/Sora/Sora-ExtraLight.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'SoraLight';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('./assets/fonts/Sora/Sora-Light.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'SoraRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./assets/fonts/Sora/Sora-Regular.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'SoraMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('./assets/fonts/Sora/Sora-Medium.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'SoraSemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('./assets/fonts/Sora/Sora-SemiBold.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'SoraBold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./assets/fonts/Sora/Sora-Bold.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'SoraExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('./assets/fonts/Sora/Sora-ExtraBold.ttf') format('ttf');
+  }
 }

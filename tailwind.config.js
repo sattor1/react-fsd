@@ -7,11 +7,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     colors: {
-      primary: {
-        DEFAULT: '#000000',
-        neutral: '#404040',
-        white: '#FFFFFF'
-      },
+      black: '#000000',
+      white: '#ffffff',
+      neutral: '#404040',
       zinc: {
         100: '#f4f4f5',
         200: '#e4e4e7',
@@ -23,16 +21,23 @@ export default {
       transparent: 'transparent'
     },
     fontFamily: {
-      sans: ['Rubik', ...defaultTheme.fontFamily.sans],
-      roboto: ['Roboto', ...defaultTheme.fontFamily.sans],
-      medium: ['RubikMedium', ...defaultTheme.fontFamily.sans]
+      'sans': ['SoraRegular', ...defaultTheme.fontFamily.sans],
+      'thin': ['SoraThin', ...defaultTheme.fontFamily.sans],
+      'extra-light': ['SoraExtraLight', ...defaultTheme.fontFamily.sans],
+      'light': ['SoraLight', ...defaultTheme.fontFamily.sans],
+      'medium': ['SoraMedium', ...defaultTheme.fontFamily.sans],
+      'semi-bold': ['SoraSemiBold', ...defaultTheme.fontFamily.sans],
+      'bold': ['SoraBold', ...defaultTheme.fontFamily.sans],
+      'extra-bold': ['SoraExtraBold', ...defaultTheme.fontFamily.sans]
     },
     fontSize: {
       xs: '12px',
       s: '16px',
       m: '18px',
+      ml: '20px',
       l: '24px',
-      xl: '36px'
+      xl: '36px',
+      xxl: '48px'
     },
     extend: {
       spacing: {
@@ -43,11 +48,11 @@ export default {
       }
     },
     stroke: {
-      primary: '#000000',
+      black: '#000000',
       white: '#ffffff'
     },
     variants: {
-      stroke: ['hover', 'focus']
+      stroke: ['hover', 'focus', 'active']
     }
   },
   plugins: []

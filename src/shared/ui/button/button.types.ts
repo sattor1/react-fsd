@@ -1,13 +1,16 @@
-import { LogoProps } from '../logo/logo.types';
+import { ILogoProps } from '~shared/ui/svg-logo/svg-logo.types';
 
-interface LogoTypes extends LogoProps {
-  position: 'left' | 'right';
+interface ILogoTypes extends ILogoProps {
+  position?: 'left' | 'right';
 }
 
-export interface ButtonProps {
+export interface IButtonProps {
   primary?: boolean;
-  backgroundColor?: string;
-  label: string;
+  size: 'small' | 'medium';
+  label?: string;
+  logo?: ILogoTypes;
+  className?: string;
+  svgClasses?: string;
+  isHideLabel?: boolean;
   onClick?: () => void;
-  logo?: LogoTypes;
 }

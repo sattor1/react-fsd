@@ -9,10 +9,12 @@
     "skipLibCheck": true,
     "baseUrl": "./src",
     "paths": {
+      "~/*": ["/"],
       "~svg/*": ["./assets/svg/*"],
       "~app/*": ["app/*"],
       "~pages/*": ["pages/*"],
-      "~shared/*": ["shared/*"]
+      "~shared/*": ["shared/*"],
+      "~widgets/*": ["widgets/*"],
     },
 
     /* Bundler mode */
